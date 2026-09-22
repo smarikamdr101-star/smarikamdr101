@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smarika Manandhar | Customer Care Support</title>
+<meta name="description" content="Smarika Manandhar | Customer Care Support professional based in Lisbon, Portugal.">
+
+<style>
+:root{
+  --bg:#f8f8f6;
+  --paper:#ffffff;
+  --ink:#161616;
+  --muted:#737373;
+  --soft:#eeeeea;
+  --line:#e4e4df;
+  --accent:#735cff;
+  --accent2:#a78bfa;
+  --dark:#171717;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.65;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;
+  background-image:linear-gradient(rgba(0,0,0,.025) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(0,0,0,.025) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,black,transparent 75%);
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+.topbar{
+  height:72px;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;position:sticky;top:0;
+  background:rgba(248,248,246,.88);backdrop-filter:blur(14px);z-index:50;
+}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:750;letter-spacing:-.035em}
+.brand span{color:#999;font-weight:500}
+.navlinks{display:flex;gap:27px;font-size:13px;color:#777}
+.navlinks a{transition:.2s}
+.navlinks a:hover{color:var(--ink)}
+
+.hero{
+  min-height:calc(100vh - 72px);position:relative;
+  display:grid;grid-template-columns:1.4fr .6fr;gap:80px;
+  align-items:center;padding:90px 0 105px;overflow:hidden;
+}
+.hero:after{
+  content:"";position:absolute;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent2) 0%,rgba(167,139,250,.12) 42%,transparent 70%);
+  right:-160px;top:80px;opacity:.42;pointer-events:none;
+}
+.eyebrow{
+  display:flex;align-items:center;gap:9px;color:#777;font-size:11px;
+  font-weight:700;text-transform:uppercase;letter-spacing:.16em;margin-bottom:25px;
+}
+.eyebrow:before{content:"";width:26px;height:1px;background:var(--accent)}
+h1{
+  font-size:clamp(54px,8vw,94px);line-height:.95;
+  letter-spacing:-.07em;margin:0 0 30px;font-weight:780;
+  max-width:850px;position:relative;z-index:2;
+}
+.gradient-text{
+  background:linear-gradient(100deg,#171717 20%,#735cff 72%,#a78bfa);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p{max-width:680px;font-size:19px;line-height:1.7;color:#595959;margin:0}
+.actions{display:flex;gap:11px;margin-top:34px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 16px;border:1px solid #d6d6d1;border-radius:7px;
+  font-size:13px;font-weight:650;transition:.2s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.07)}
+.btn.primary{background:var(--dark);color:#fff;border-color:var(--dark)}
+
+.hero-panel{
+  position:relative;z-index:2;background:rgba(255,255,255,.82);
+  border:1px solid var(--line);border-radius:14px;padding:28px;
+  box-shadow:0 20px 55px rgba(0,0,0,.06);
+}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:11px;color:#555;
+  background:#f4f4f1;border:1px solid var(--line);border-radius:999px;padding:7px 10px}
+.dot{width:7px;height:7px;border-radius:50%;background:#35a66f;box-shadow:0 0 0 4px rgba(53,166,111,.12)}
+.panel-line{height:1px;background:var(--line);margin:23px 0}
+.meta-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#aaa;margin-bottom:5px}
+.meta-value{font-size:14px;margin-bottom:20px}
+.mini-links{display:flex;gap:8px;flex-wrap:wrap}
+.mini{
+  font-size:11px;border:1px solid var(--line);border-radius:6px;padding:7px 9px;color:#666;
+  background:#fafafa;
+}
+
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-42px;
+  position:relative;z-index:5;
+}
+.stat{
+  background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px 22px;
+  box-shadow:0 10px 28px rgba(0,0,0,.035);
+}
+.stat b{font-size:28px;letter-spacing:-.05em;display:block}
+.stat span{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.12em}
+
+section{padding:110px 0;border-top:1px solid var(--line)}
+.section-head{
+  display:grid;grid-template-columns:250px 1fr;gap:70px;margin-bottom:48px;
+}
+.section-number{font-size:11px;color:#aaa;font-weight:700;letter-spacing:.12em}
+h2{font-size:38px;letter-spacing:-.055em;margin:0;font-weight:750}
+.intro{font-size:17px;color:#666;max-width:720px;margin:10px 0 0}
+
+.about-box{
+  display:grid;grid-template-columns:1fr 1fr;gap:18px;
+}
+.about-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:28px;
+}
+.about-card.accent{background:var(--dark);color:#fff;border-color:var(--dark)}
+.about-card h3{font-size:17px;margin:0 0 12px}
+.about-card p{font-size:14px;color:#666;margin:0}
+.about-card.accent p{color:#aaa}
+
+.experience{
+  border-top:1px solid var(--line);padding:32px 0;
+  display:grid;grid-template-columns:180px 1fr;gap:55px;
+}
+.date{font-size:12px;color:#888}
+.role{font-size:23px;font-weight:700;letter-spacing:-.025em}
+.company{font-size:14px;color:#777;margin-top:4px}
+.location{font-size:12px;color:#aaa;margin-top:3px}
+ul{margin:22px 0 0;padding-left:19px;color:#555}
+li{margin:9px 0}
+
+.education-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.edu{
+  border:1px solid var(--line);border-radius:10px;padding:26px;min-height:190px;
+  background:var(--paper);position:relative;overflow:hidden;transition:.2s;
+}
+.edu:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.05)}
+.edu:after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;
+  background:rgba(115,92,255,.08);right:-35px;bottom:-35px}
+.edu-year{font-size:11px;color:#aaa;margin-bottom:30px}
+.edu-title{font-weight:700;font-size:17px;line-height:1.35;max-width:230px}
+.edu-school{font-size:13px;color:#777;margin-top:9px}
+
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.skill-group h3{font-size:15px;margin:0 0 17px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{
+  border:1px solid var(--line);border-radius:6px;padding:8px 11px;
+  font-size:12px;color:#555;background:var(--paper);transition:.18s;
+}
+.tag:hover{border-color:#bdb4ff;background:#f7f5ff;color:#5541c8}
+
+.lang-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.lang{
+  padding:24px;border:1px solid var(--line);border-radius:9px;background:var(--paper);
+  transition:.18s;
+}
+.lang:hover{transform:translateY(-3px)}
+.lang strong{display:block;font-size:15px}
+.lang span{display:block;color:#888;font-size:12px;margin-top:5px}
+
+.contact{
+  background:var(--dark);color:#fff;border-radius:14px;padding:52px;
+  position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;
+  gap:35px;align-items:center;
+}
+.contact:after{
+  content:"";position:absolute;width:300px;height:300px;border-radius:50%;
+  background:radial-gradient(circle,rgba(115,92,255,.45),transparent 68%);
+  right:-100px;top:-100px;
+}
+.contact > *{position:relative;z-index:2}
+.contact .eyebrow{color:#888}
+.contact h2{font-size:42px}
+.contact p{color:#aaa;max-width:600px}
+.contact-actions{display:flex;gap:9px;flex-wrap:wrap}
+.contact .btn.light{background:#fff;color:#111;border-color:#fff}
+.contact .btn.outline{background:transparent;color:#fff;border-color:#555}
+
+footer{padding:40px 0 60px;color:#999;font-size:12px;display:flex;justify-content:space-between}
+
+@media(max-width:800px){
+  .container{width:min(var(--max),calc(100% - 32px))}
+  .navlinks{display:none}
+  .hero{grid-template-columns:1fr;gap:45px;padding:70px 0 90px}
+  .stats{margin-top:-28px;grid-template-columns:1fr}
+  .section-head,.experience{grid-template-columns:1fr;gap:18px}
+  .about-box,.skills-grid{grid-template-columns:1fr}
+  .education-grid{grid-template-columns:1fr}
+  .lang-grid{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr;padding:34px}
+  .contact h2{font-size:34px}
+  footer{display:block}
+}
+</style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#">SMARIKA <span>MANANDHAR</span></a>
+    <nav class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="border-top:0">
+  <div class="container" style="display:contents">
+    <div>
+      <div class="eyebrow">Customer Care Support · Lisbon, Portugal</div>
+      <h1>Customer support,<br><span class="gradient-text">done thoughtfully.</span></h1>
+      <p>
+        Customer Care Support professional with 2+ years of experience delivering
+        responsive, multi-channel support across email, chat and social media.
+        Detail-oriented, adaptable and comfortable taking ownership from planning
+        through execution.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=smarikamdr101@gmail.com&su=Professional%20Enquiry" target="_blank" rel="noopener">Email me ↗</a>
+        <a class="btn" href="#experience">Explore experience ↓</a>
+      </div>
+    </div>
+
+    <aside class="hero-panel">
+      <div class="status"><span class="dot"></span> Based in Lisbon</div>
+      <div class="panel-line"></div>
+      <div class="meta-label">Current focus</div>
+      <div class="meta-value">Customer Care &amp; Support</div>
+      <div class="meta-label">Languages</div>
+      <div class="meta-value">Nepali · English · Hindi · Portuguese · German</div>
+      <div class="meta-label">Contact</div>
+      <div class="meta-value">+351 920 147 539<br>s​marikamdr101@gmail.com</div>
+      <div class="mini-links">
+        <a class="mini" href="tel:+351920147539">Call</a>
+        <a class="mini" href="https://mail.google.com/mail/?view=cm&fs=1&to=smarikamdr101@gmail.com&su=Professional%20Enquiry" target="_blank" rel="noopener">Gmail</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div class="container">
+  <div class="stats">
+    <div class="stat"><b>2+</b><span>Years experience</span></div>
+    <div class="stat"><b>5</b><span>Languages</span></div>
+    <div class="stat"><b>3</b><span>Support channels</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-number">01 / ABOUT</div>
+      <div>
+        <h2>A practical, people-focused approach.</h2>
+        <p class="intro">
+          Clear communication, careful organisation and genuine attention to the customer
+          sit at the centre of my approach.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-box">
+      <div class="about-card">
+        <h3>How I work</h3>
+        <p>
+          Fluent in English, with a genuine passion for helping customers and a hands-on
+          approach to problem solving. Comfortable with flexible shifts, new tools and
+          changing priorities while keeping work organised.
+        </p>
+      </div>
+      <div class="about-card accent">
+        <h3>What I value</h3>
+        <p>
+          Responsive communication, long-term customer relationships, ownership of tasks,
+          accurate documentation and continuous learning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-number">02 / EXPERIENCE</div>
+      <div>
+        <h2>Professional experience</h2>
+        <p class="intro">Customer support, relationship building, administration and day-to-day ownership.</p>
+      </div>
+    </div>
+
+    <article class="experience">
+      <div class="date">10/2022 — Present</div>
+      <div>
+        <div class="role">Customer Care Support</div>
+        <div class="company">Serene Tech Innovations Pvt. Ltd.</div>
+        <div class="location">Kathmandu, Nepal · On-site 10/2022–12/2024 · Remote 12/2024–Present</div>
+        <ul>
+          <li>Served as a key point of contact for customer enquiries across email, chat and social media, maintaining professional, responsive communication.</li>
+          <li>Resolved customer questions and support requests efficiently, maintaining a high standard of service and close attention to detail.</li>
+          <li>Proactively engaged with customers to build relationships and support long-term satisfaction.</li>
+          <li>Took ownership of day-to-day support tasks and improvement initiatives, from planning and prioritisation through execution and follow-up.</li>
+          <li>Used Microsoft Office Suite, Google Workspace, Jira and other digital tools for data entry, document management and administrative support.</li>
+          <li>Maintained accurate records and organised documentation while managing multiple priorities in a fast-paced environment.</li>
+          <li>Adapted quickly to new tools, processes and shifting priorities while remaining organised under pressure.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-number">03 / EDUCATION</div>
+      <div>
+        <h2>Education</h2>
+        <p class="intro">Science and technology-focused academic background across Portugal and Nepal.</p>
+      </div>
+    </div>
+
+    <div class="education-grid">
+      <div class="edu">
+        <div class="edu-year">2025 — Present</div>
+        <div class="edu-title">Ciências e Tecnologia</div>
+        <div class="edu-school">Escola Camões · Lisbon, Portugal</div>
+      </div>
+      <div class="edu">
+        <div class="edu-year">2022 — 2023</div>
+        <div class="edu-title">A Levels — Science and Technology Major</div>
+        <div class="edu-school">The British College · Kathmandu, Nepal</div>
+      </div>
+      <div class="edu">
+        <div class="edu-year">Prior to 2022</div>
+        <div class="edu-title">Basic Schooling</div>
+        <div class="edu-school">Kathmandu, Nepal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-number">04 / SKILLS</div>
+      <div>
+        <h2>Capabilities &amp; tools</h2>
+        <p class="intro">Communication, customer care, organisation and digital workflow skills.</p>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Core strengths</h3>
+        <div class="tags">
+          <span class="tag">Multi-Channel Customer Support</span>
+          <span class="tag">Customer Relationship Building</span>
+          <span class="tag">Proactive Customer Care</span>
+          <span class="tag">Project Ownership</span>
+          <span class="tag">Problem Solving</span>
+          <span class="tag">Written &amp; Verbal Communication</span>
+          <span class="tag">Time Management</span>
+          <span class="tag">Adaptability</span>
+          <span class="tag">Team Collaboration</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools &amp; expertise</h3>
+        <div class="tags">
+          <span class="tag">Microsoft Office Suite</span>
+          <span class="tag">Google Workspace</span>
+          <span class="tag">Jira</span>
+          <span class="tag">CRM &amp; Ticketing Systems</span>
+          <span class="tag">Data Entry</span>
+          <span class="tag">Document Management</span>
+          <span class="tag">Conflict Resolution</span>
+          <span class="tag">Data Protection Awareness</span>
+          <span class="tag">Flexible Scheduling</span>
+          <span class="tag">International Client Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="languages">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-number">05 / LANGUAGES</div>
+      <div><h2>Languages</h2></div>
+    </div>
+
+    <div class="lang-grid">
+      <div class="lang"><strong>Nepali</strong><span>Native</span></div>
+      <div class="lang"><strong>English</strong><span>Proficient</span></div>
+      <div class="lang"><strong>Hindi</strong><span>Proficient</span></div>
+      <div class="lang"><strong>Portuguese</strong><span>Intermediate</span></div>
+      <div class="lang"><strong>German</strong><span>Intermediate</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact">
+      <div>
+        <div class="eyebrow">06 / CONTACT</div>
+        <h2>Let's connect.</h2>
+        <p>For professional opportunities, customer support roles or collaboration, feel free to get in touch.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn light" href="https://mail.google.com/mail/?view=cm&fs=1&to=smarikamdr101@gmail.com&su=Professional%20Enquiry" target="_blank" rel="noopener">Email ↗</a>
+        <a class="btn outline" href="tel:+351920147539">Call ☎</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="container">
+  <span>© Smarika Manandhar</span>
+  <span>References available upon request.</span>
+</footer>
+
+</body>
+</html>
